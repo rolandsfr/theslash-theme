@@ -13,7 +13,8 @@ Minimalistic e-commerce site template/theme for online clothing stores.
 # Theme itself
 
 You can find the theme in the [/theme](https://github.com/rolandsfr/theslash-theme/tree/main/theme) directory  
-Demo is deployed [here](https://theslash.netlify.app/)
+Demo is deployed [here](https://theslash.netlify.app/)  
+Theme was initially published on February 7th (2020) and later migrated to this repository.
   
 ## About the project & history
   
