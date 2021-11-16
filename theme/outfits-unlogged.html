@@ -1,0 +1,408 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+ 	<title>TheSlash | Outfits</title>
+ 
+ 	<!-- Page icon -->
+ 	<link rel="icon" href="assets/img/Roly Golden Logo.svg">
+ 
+ 	<!-- Libraries / external css / fonts -->
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.css">
+ 	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+ 	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+ 	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6.2.3/themes/light.css">
+ 
+ 	<!-- Page styling files (main styles / media quires)-->
+ 	<link rel="stylesheet" href="assets/css/main.css">
+ 	<link rel="stylesheet" href="assets/css/media.css">
+ 	<link rel="stylesheet" href="assets/css/outfits.css">
+ 	<link rel="stylesheet" href="assets/css/outfits_media.css">
+ 	<link rel="stylesheet" href="assets/css/signup.css">
+ 	<link rel="stylesheet" href="assets/css/modalStylesheets.css">
+ 	
+ 	<style>
+ 		.cart, .cart-item, .profile {
+ 			display: none !important;
+ 		}
+ 	</style>
+ </head>
+ <body>
+ 	<div class="viewport-size"></div>
+ 	<div class="nav-overlay"></div>
+ 
+ 	<div id="wrapper">
+ 		<!-- Page menu -->
+ 		<div class="nav-outer">
+ 			<nav>
+ 				<div class="container">	
+ 					<a href="index-unlogged.html" class="nav-logo"><img src="assets/img/placeholder-logo.png" alt="Logo"></a>
+ 						
+ 					<!-- Navigation-->
+ 					<div class="points">
+ 						<ul class="nav-points">
+ 							<li class="multiple">
+ 								<p>Shop</p>
+ 								<div class="dropdown">
+ 									<ul>
+ 										<li><a href="outfits-unlogged.html">outfits</a></li>
+ 										<li><a href="shop-unlogged.html">all items</a></li>
+ 									</ul>
+ 								</div>
+ 							</li>
+ 							<li><a href="about_us.html">About us</a></li>
+ 							<li><a href="support.html">Support</a></li>
+ 							<li><a href="arrivals-unlogged.html">New Arrivals</a></li>
+ 							<li><a href="index-unlogged.html?signup" style="display: inline-block;" class="signUp">Sign Up</a></li>
+ 							<li class="cart-mobile"><a href="cart.html" class="cart-item">Cart <span class="items-count-block">[<span class="items-count"></span>]</span></a></li>
+ 						</ul>
+ 		
+ 						<!-- Personal user account navigation -->
+ 					<div class="profile">
+ 						<div class="profile-img" data-src="assets/img/alex-michaelsen-1264418-unsplash.jpg">
+ 							<div class="profile-dropdown dropdown">
+ 								<ul>
+ 									<li><a href="settings.html">Settings</a></li>
+ 									<li><a href="wishlist.html">Wishlist</a></li>
+ 									<li><a href="outfits_saved.html">Saved outfits</a></li>
+ 									<li><a href="item_selections.html">Create outfit</a></li>
+ 									<li><a href="index-unlogged.html">Log out</a></li>
+ 								</ul>
+ 							</div>
+ 						</div>	
+ 					</div>
+ 								
+ 						<a class="cart" href="cart.html">
+ 							<i class="fas fa-shopping-cart"></i>
+ 							<div class="items-count"></div>
+ 						</a>
+ 					</div>
+ 			
+ 					<div class="burger-mob">
+ 						<span></span>
+ 						<span></span>
+ 						<span></span>
+ 					</div>
+ 				
+ 				</div>		
+ 			</nav>
+ 		</div>
+ 		<!-- 1st screen with description of the page -->
+ 		<div class="fullScreen-resp">
+ 			<div class="container">
+ 				<main class="outfits-intro">
+ 					<div class="container titles-container wow fadeIn" data-wow-duration="1s">
+ 						<!-- Page titles -->
+ 						<div class="titles">
+ 							<p class="pretitle">
+ 								Best looks of the season
+ 							</p>
+ 							<h2 class="main-title">
+ 								Find something that fits your needs
+ 							</h2>
+ 						</div>
+ 					</div>
+ 					
+ 					<!-- Block with images -->
+ 					<div class="images-block">
+ 						<div class="img-left wow fadeInUp" data-wow-duration="1s" data-src="assets/img/parker-whitson-wKmTQ1yXsVw-unsplash.jpg"></div>
+ 						<div class="img-right wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s" data-src="assets/img/kenzie-kraft-VBy-e_ic5Ak-unsplash.jpg"></div>
+ 						<a href="#" class="discover-btn wow fadeIn" data-wow-duration="1s">discover now</a>
+ 					</div>
+ 
+ 					<aside class="side-info"></aside>
+ 
+ 					<!-- Description -->
+ 					<div class="container main-descr-container wow fadeIn" data-wow-duration="1s">
+ 						<p class="main-description">
+ 							If you ever had problems with making outfits - this section is for you! Inspire from the outfits our designers have made, make your own custom outfit or purchase clothes from an existing one! Our company is here to do everything for you to enjoy online shopping.
+ 						</p>
+ 					</div>
+ 				</main>
+ 			</div>
+ 		</div>
+ 
+ 		<!-- Outfit section with products related to it -->
+ 		<section class="outfit">
+ 			<div class="container">
+ 				<div class="outfit-info">
+ 					<div class="outfit-img wow fadeInUp" data-wow-duration="1s" data-src="assets/img/parker-whitson-wKmTQ1yXsVw-unsplash.jpg"></div>
+ 					<div class="outfit-descr">
+ 						<h2 class="outfit-name">// Watch me</h2>
+ 						<div class="outfit-text">
+ 							Feeling confident? Rock this thrift to practically anywhere, the park, school, shopping, cruising on your skateboard. Brings out the best vibes! White shirt with a colorful print and Adidas Yeezy makes this outfit stand out and very fitting for casual daily look.
+ 						</div>
+ 						<div class="btns">
+ 							<a href="#" class="scrollToProducts">See convenient products</a>
+ 							<a href="#" class="saveLook">Save look and items (clothes)</a>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 
+ 			<div class="products">
+ 				<div class="container-fluid container">
+ 					<div class="row shuffle">
+ 						<div class="item_outer col-lg-4 col-md-6">
+ 							<div class="item">
+ 								<div class="product-img lazyload" data-src="assets/img/nike-airforce.jpg">
+ 									<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 								</div>
+ 								<div class="model">Nike air force</div>
+ 								<div class="price">$99</div>
+ 								<div class="addToCart">Add to cart</div>
+ 							</div>
+ 						</div>
+ 						<div class="item_outer col-lg-4 col-md-6">
+ 							<div class="item">
+ 								<div class="product-img lazyload" data-src="assets/img/hilfiger-tee.jpeg">
+ 									<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 								</div>
+ 								<div class="model">TH tee</div>
+ 								<div class="price">$34</div>
+ 								<div class="addToCart">Add to cart</div>
+ 							</div>
+ 						</div>
+ 						<div class="item_outer col-lg-4 col-md-6">
+ 							<div class="item">
+ 								<div class="product-img lazyload" data-src="https://cache.net-a-porter.com/images/products/741153/741153_in_2000_q80.jpg">
+ 									<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 								</div>
+ 								<div class="model">Gucci belt</div>
+ 								<div class="price">$389</div>
+ 								<div class="addToCart">Add to cart</div>
+ 							</div>
+ 						</div>
+ 						<div class="sizer col-lg-4 col-md-6"></div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</section>
+ 			
+ 		<section class="outfit">
+ 			<div class="container">
+ 				<div class="outfit-info">
+ 					<div class="outfit-img wow fadeInUp" data-wow-duration="1s" data-src="assets/img/kenzie-kraft-VBy-e_ic5Ak-unsplash.jpg"></div>
+ 					<div class="outfit-descr">
+ 						<h2 class="outfit-name">// Purity</h2>
+ 						<div class="outfit-text">
+ 							White color signifies purity & innocence. You could wear "Purity" to a rather chill-axing outing, such as at the Beach or a casual family BBQ. Very convenient for hot summer days. 
+ 						</div>
+ 						<div class="btns">
+ 							<a href="#" class="scrollToProducts">See convenient products</a>
+ 							<a href="#" class="saveLook">Save look and items (clothes)</a>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 
+ 			<div class="products">
+ 				<div class="container-fluid container">
+ 					<div class="row shuffle">
+ 						<div class="item_outer col-lg-4 col-md-6">
+ 							<div class="item">
+ 								<div class="product-img lazyload" data-src="assets/img/air_max_720.jpg">
+ 									<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 								</div>
+ 								<div class="model">Nike air max 720</div>
+ 								<div class="price">$114</div>
+ 								<div class="addToCart">Add to cart</div>
+ 							</div>
+ 						</div>
+ 						<div class="item_outer col-lg-4 col-md-6">
+ 							<div class="item">
+ 								<div class="product-img" data-src="assets/img/sorin-sirbu-509963-unsplash-min.jpg">
+ 									<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 								</div>
+ 								<div class="model">Zara jacket</div>
+ 								<div class="price">$65</div>
+ 								<div class="addToCart">Add to cart</div>
+ 							</div>
+ 						</div>
+ 						<div class="item_outer col-lg-4 col-md-6">
+ 							<div class="item">
+ 								<div class="product-img lazyload" data-src="assets/img/hilfiger-tee.jpeg">
+ 									<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 								</div>
+ 								<div class="model">TH tee</div>
+ 								<div class="price">$34</div>
+ 								<div class="addToCart">Add to cart</div>
+ 							</div>
+ 						</div>				
+ 						<div class="sizer col-lg-4 col-md-6"></div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</section>
+ 	</div>
+ 
+ 	<!-- Footer -->
+ 	<footer>
+ 		<div class="container">
+ 			<div class="nav-block">
+ 				<h2>Main navigation</h2>
+ 				<ul>
+ 					<li><a href="about_us.html">About us</a></li>
+ 					<li><a href="support.html">Support</a></li>
+ 					<li><a href="arrivals.html">New Arrivals</a></li>
+ 				</ul>
+ 			</div>
+ 			<div class="nav-block">
+ 				<h2>Shop</h2>
+ 				<ul>
+ 					<li><a href="outfits.html">Outfits</a></li>
+ 					<li><a href="shop.html">Products</a></li>
+ 				</ul>
+ 			</div>
+ 			
+ 			<ul class="social">
+ 				<li class="wow fadeIn"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.1s"><a href="https://dribbble.com/"><i class="fas fa-basketball-ball"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.2s"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.3s"><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+ 			</ul>
+ 		</div>
+ 		<div class="warning">
+ 			<div class="container">
+ 				<p>Copyright &copy;TheSlash 2020. All rights reserved.</p>
+ 			</div>
+ 		</div>
+ 	</footer>
+ 	<div class="login-container">
+ 		<div class="container_inner">
+ 			<div class="container">
+ 				<!-- Login block -->
+ 				<div class="login wow fadeInUp">
+ 					<div class="form-header">
+ 						<h2>Login form</h2>
+ 					</div>
+ 	
+ 					<form action="index.html" class="login-form" method="POST">
+ 						<!-- Text inputs -->
+ 						<label for="email">Your email address</label>
+ 						<input class="text-field" id="email" type="text" placeholder="">
+ 	
+ 						<label for="password">Your password</label>
+ 						<input class="text-field" type="password" id="password" placeholder="">
+ 						
+ 						<!-- Remember me checkbox -->
+ 						<div class="checkbox-block">
+ 							<input class="checkbox" type="checkbox" name="remember" id="remember">
+ 							<label for="remember">Remember me</label>
+ 						</div>
+ 						
+ 						<div class="submit">
+ 							<!-- Eror handler -->
+ 							<p class="error-handler"></p>
+ 							
+ 							<!-- Sign in button -->
+ 							<button class="signup-btn">Sign in</button>
+ 						</div>
+ 								
+ 						<span>Don't have an account yet? <a href="index-unlogged.html#modal">Sign up</a>!</span>
+ 					</form>
+ 				</div>
+ 			</div>
+ 			<a href="#" class="close-login">Close</a>
+ 		</div>
+ 	</div>
+ 	<!-- Preloading / unloading screen -->
+ 	<div class="preloading-screen">
+ 		<div class="gooey">
+ 		  <span class="dot"></span>
+ 		  <div class="dots">
+ 		    <span></span>
+ 		    <span></span>
+ 		    <span></span>
+ 		  </div>
+ 		</div>
+ 	</div>
+ 	<!-- Javascript libaries -->
+     <script src="assets/js/libs.min.js"></script>
+ 	<script src="assets/js/wow.min.js"></script>
+ 
+ 	<!-- Javascript page scripts -->
+ 	<script src="assets/js/common.js"></script>
+ 
+ 	<!-- Script exlusive to the page -->
+ 	<script>	
+ 		"use strict";
+ 		
+ 		// 1st screen adaptation for mobile devices
+ 		if($(document).width() >= 1024) {
+ 			$(".fullScreen-resp").removeClass("fullScreen-resp").addClass("fullScreen");
+ 			$(".fullScreen, .fullScreen .outfits-intro").css("min-height", $(window).height() - $(".nav-outer").outerHeight() + "px");
+ 
+ 			$('.titles-container').detach().appendTo("aside");
+ 			$('.main-descr-container').detach().appendTo("aside");
+ 			$('.discover-btn').detach().appendTo("aside");
+ 
+ 		} else {
+ 			$(".fullScreen-resp > .container").removeClass("container");
+ 			$(".fullScreen-resp").css("min-height", $(".fullScreen-resp > div").outerHeight());
+ 			$(".fullScreen").removeClass("fullScreen").addClass("fullScreen-resp");
+ 
+ 			$('.titles-container').detach().insertBefore(".images-block");
+ 			$('.main-descr-container').detach().insertAfter("aside");	
+ 			$('.discover-btn').detach().appendTo(".images-block");
+ 		}
+ 
+ 		$(window).resize(() => {
+ 			if($(document).width() >= 1024) {
+ 				$(".fullScreen-resp").removeClass("fullScreen-resp").addClass("fullScreen");
+ 				$(".fullScreen > div").addClass("container");
+ 				$(".fullScreen, .fullScreen .outfits-intro").css("min-height", $(window).height() - $(".nav-outer").outerHeight() + "px");
+ 
+ 				$('.titles-container').detach().appendTo("aside");
+ 				$('.main-descr-container').detach().appendTo("aside");
+ 				$('.discover-btn').detach().appendTo("aside");
+ 			} else {
+ 				$(".fullScreen").removeClass("fullScreen").addClass("fullScreen-resp");
+ 				$(".fullScreen-resp > .container").removeClass("container");
+ 
+ 				$(".fullScreen-resp").css("min-height", $(".fullScreen-resp > div").height());
+ 				$(".fullScreen-resp .outfits-intro").css("min-height", "400px");
+ 
+ 				$('.titles-container').detach().insertBefore(".images-block");
+ 				$('.main-descr-container').detach().insertAfter("aside");	
+ 				$('.discover-btn').detach().appendTo(".images-block");
+ 			}
+ 		});
+ 
+ 		// Button functionality
+ 		$(".scrollToProducts").each((index, el) => {
+ 			$(el).click((e) => {
+ 				e.preventDefault();
+ 				$("html, body").animate({scrollTop: $(el).closest(".outfit").find(".products").offset().top - $("nav").outerHeight() - 50}, 1000);
+ 			});
+ 		});
+ 
+ 		$(".discover-btn").click((e) => {
+ 			e.preventDefault();
+ 			$("html, body").animate({scrollTop: $(".outfit").first().offset().top - $("nav").outerHeight() - 50} , 1000);
+ 		});
+ 
+ 		// Handling error(s) in login form
+ 		$(".signup-btn").click((e) => {
+ 			$(".error-handler").html("").hide();
+ 			$(".text-field").css("border-color", "#000")
+ 
+ 			e.preventDefault();
+ 			for(let i = 0; i < $(".text-field").length; i++) {
+ 				if($(".text-field").eq(i).val() === "") {
+ 					$(".error-handler").html("Please, fill in all the fields").show();
+ 					$(".text-field").eq(i).css("border-color", "red")
+ 				} 
+ 			}
+ 		})
+ 
+ 		// ONLY FOR DEMONSTRATION PURPUSES
+ 		$(".item .buy-btn").on("click", (e) => {
+ 		    e.preventDefault();
+ 		    window.location.href = "../item-unlogged.html";        
+ 		})
+ 	</script>
+ </body>
+ </html>

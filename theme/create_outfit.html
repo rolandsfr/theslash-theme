@@ -1,0 +1,231 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+ 	<title>TheSlash | Create own outfit</title>
+ 
+ 	<!-- Page icon -->
+ 	<link rel="icon" href="assets/img/Roly Golden Logo.svg">
+ 
+ 	<!-- Libraries / external css / fonts -->
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.css">
+ 	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+ 	<link rel="stylesheet" href="https://unpkg.com/tippy.js@6.2.3/themes/light.css">
+ 	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+ 
+ 	<!-- Page styling files (main styles / media quires)-->
+ 	<link rel="stylesheet" href="assets/css/main.css">
+ 	<link rel="stylesheet" href="assets/css/media.css">
+ 	<link rel="stylesheet" href="assets/css/outfits.css">
+ 	<link rel="stylesheet" href="assets/css/outfits_media.css">
+     <link rel="stylesheet" href="assets/css/outfits_saved.css">
+     <link rel="stylesheet" href="assets/css/create_outfit.css">
+ </head>
+ <body>
+ 	<div class="viewport-size"></div>
+ 	<div class="nav-overlay"></div>
+ 
+ 	<div id="wrapper">
+ 		<!-- Page menu -->
+ 		<div class="nav-outer">
+ 			<nav>
+ 				<div class="container">	
+ 					<a href="index.html" class="nav-logo"><img src="assets/img/placeholder-logo.png" alt="Logo"></a>
+ 								
+ 					<!-- Navigation-->
+ 					<div class="points">
+ 						<ul class="nav-points">
+ 							<li class="multiple">
+ 								<p>Shop</p>
+ 								<div class="dropdown">
+ 									<ul>
+ 										<li><a href="outfits.html">outfits</a></li>
+ 										<li><a href="shop.html">all items</a></li>
+ 									</ul>
+ 								</div>
+ 							</li>
+ 							<li><a href="about_us.html">About us</a></li>
+ 							<li><a href="support.html">Support</a></li>
+ 							<li><a href="arrivals.html">New Arrivals</a></li>
+ 							<li><a href="#modal" class="signUp" rel="modal:open">Sign Up</a></li>
+ 							<li class="cart-mobile"><a href="cart.html" class="cart-item">Cart <span class="items-count-block">[<span class="items-count">2</span>]</span></a></li>
+ 						</ul>
+ 								
+ 						<!-- Personal user account navigation -->
+ 						<div class="profile">
+ 							<div class="profile-img" data-src="assets/img/alex-michaelsen-1264418-unsplash.jpg">
+ 								<div class="profile-dropdown dropdown">
+ 									<div class="triangle"></div>
+ 									<ul>
+ 										<li><a href="settings.html">Settings</a></li>
+ 										<li><a href="wishlist.html">Wishlist</a></li>
+ 										<li><a href="collection.html">Collection</a></li>
+ 										<li><a href="outfits_saved.html">Saved outfits</a></li>
+ 										<li><a href="item_selections.html">Create outfit</a></li>
+ 										<li><a href="index-unlogged.html">Log out</a></li>
+ 									</ul>
+ 								</div>
+ 							</div>	
+ 						</div>
+ 		
+ 						<a class="cart" href="cart.html">
+ 							<i class="fas fa-shopping-bag"></i>
+ 							<div class="items-count">2</div>
+ 						</a>
+ 					</div>
+ 								
+ 					<div class="burger-mob">
+ 						<span></span>
+ 						<span></span>
+ 						<span></span>
+ 					</div>
+ 				</div>		
+ 			</nav>
+ 		</div>	</div>
+ 
+ 	<!-- Main screen -->
+     <div class="fullScreen-resp">
+         <div class="container">
+         	<div class="container-info">
+ 			<!-- Page title -->
+ 				<h2 class="page-title">custom outfits</h2>
+ 				
+ 				<p class="error-msg"></p>
+ 				
+ 				<!-- Outfit text-type information -->
+ 	            <div class="outfit-essantials">
+ 	                <div class="outfitDescr wow fadeInUp">
+ 						<!-- Name of the outfit -->
+ 	                    <p class="outfit-section-name">Basic information</p>
+ 	                    <label for="outfitName-in">Outfit name</label> <br>
+ 	                    <input type="text" id="outfitName-in">
+ 						
+ 						<!-- Outfit description -->
+ 	                    <label for="outfitDescr-in">Outfit description</label> <br>
+ 	                    <textarea name="outfitDescription" id="outfitDescr-in"></textarea>
+ 	                </div>
+ 					
+ 					<!-- Outfit picture -->
+ 	                <div class="outfit-img-section wow fadeInUp" data-wow-delay="0.13s">
+ 
+ 	                    <p class="outfit-section-name">Visuals</p>
+ 
+ 	                    <div class="upload-img-info">
+ 	                        <p>Add an image related to this look<i class="fas fa-info"></i></p>
+ 	                    </div>
+ 						<br>
+ 						
+ 						<div class="outfit-btns">
+ 							<label for="upload-img" class="upload-btn">Upload image</label>							
+ 							<!-- Button that saved the outfit on click -->
+ 		                    <a href="outfits_saved.html" class="finish-btn">finish</a>
+ 						</div>
+ 
+ 						<p class="success-msg"></p>
+ 
+ 						<!-- Input that request the file -->
+ 	                    <input id="upload-img" type="file">
+ 	                    <br>
+ 	                </div>
+ 	            </div>
+ 	        </div>
+         </div>
+     </div>
+ 	
+ 	<!-- Footer -->
+ 	<footer>
+ 		<div class="container">
+ 			<div class="nav-block">
+ 				<h2>Main navigation</h2>
+ 				<ul>
+ 					<li><a href="about_us.html">About us</a></li>
+ 					<li><a href="support.html">Support</a></li>
+ 					<li><a href="arrivals.html">New Arrivals</a></li>
+ 				</ul>
+ 			</div>
+ 			<div class="nav-block">
+ 				<h2>Shop</h2>
+ 				<ul>
+ 					<li><a href="outfits.html">Outfits</a></li>
+ 					<li><a href="shop.html">Products</a></li>
+ 				</ul>
+ 			</div>
+ 			
+ 			<ul class="social">
+ 				<li class="wow fadeIn"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.1s"><a href="https://dribbble.com/"><i class="fas fa-basketball-ball"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.2s"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.3s"><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+ 			</ul>
+ 		</div>
+ 		<div class="warning">
+ 			<div class="container">
+ 				<p>Copyright &copy;TheSlash 2020. All rights reserved.</p>
+ 			</div>
+ 		</div>
+ 	</footer>
+ 	<!-- Preloading / unloading screen -->
+ 	<div class="preloading-screen">
+ 		<div class="gooey">
+ 		  <span class="dot"></span>
+ 		  <div class="dots">
+ 		    <span></span>
+ 		    <span></span>
+ 		    <span></span>
+ 		  </div>
+ 		</div>
+ 	</div>
+ 	<!-- Javascript libaries -->
+ 	<script src="assets/js/libs.min.js"></script>
+ 	<script src="https://unpkg.com/@popperjs/core@2"></script>
+ 	<script src="https://unpkg.com/tippy.js@6"></script>
+ 	<script src="assets/js/wow.min.js"></script>
+ 
+ 	<!-- Javascript page scripts -->
+ 	<script src="assets/js/common.js"></script>
+ 
+ 	<!-- Script exlusive to the page -->
+ 	<script>
+ 		"use strict"
+ 
+ 		// Tooltip for image uploading
+ 		tippy('.fa-info', {
+ 			content: 'This image serves as a preview to the outfit itself. Make sure the main part is aligned in the middle of the image so that it wont get cut off. Optimal image size - 1920x1080px',
+ 			allowHTML: true,
+ 			interactive: false,
+ 			theme: 'light',
+ 			placement: 'top-end',
+ 			maxWidth: 450
+ 		});
+ 
+ 		// When the save-outfit button is pressed:
+ 		$(".finish-btn").click((e) => {
+ 			e.preventDefault();
+ 
+ 			if($("#outfitName-in").val() === "" || $("textarea").val() === "") {
+ 				// Shows an error if some of required fiels are empty
+ 				$(".error-msg").html("Please, fill in all text fields").show();
+ 
+ 				if($(window).width() <= 425) $("html, body").animate({scrollTop: $(".error-msg").offset().top - 200}, 800)
+ 			} else {
+ 				if($("#upload-img").val() === "") {
+ 					// Shows an error if user hasn't uploaded image
+ 					$(".error-msg").html("Please, upload an image").show();
+ 					if($(window).width() <= 425) $("html, body").animate({scrollTop: $(".error-msg").offset().top - 200}, 800)
+ 				} else {
+ 					// If all data has been entered - hides all errors and redirects to a page with saved outfits
+ 					$(".error-msg").hide();
+ 					window.location = $(e.target).attr("href");
+ 				}
+ 			}
+ 		});
+ 
+ 		// Shows success message if the image has been successfully selected (client side)
+ 		$("#upload-img").change((e) => {
+ 			$(".success-msg").html("The image has been successfully uploaded");
+ 		});		
+ 	</script>
+ </body>
+ </html>

@@ -1,0 +1,312 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+ 	<title>TheSlash | Products</title>
+ 
+ 	<!-- Page icon -->
+ 	<link rel="icon" href="assets/img/Roly Golden Logo.svg">
+ 
+ 	<!-- Libraries / external css / fonts -->
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+ 	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+ 
+ 	<!-- Page styling files (main styles / media quires)-->
+ 	<link rel="stylesheet" href="assets/css/main.css">
+ 	<link rel="stylesheet" href="assets/css/media.css">
+ 	<link rel="stylesheet" href="assets/css/shop.css">
+ 	<link rel="stylesheet" href="assets/css/shop_media.css">
+ </head>
+ <body>
+ 	<div class="nav-overlay"></div>
+ 	<div id="wrapper">
+ 		<!-- Page menu -->
+ 		<div class="nav-outer">
+ 			<nav>
+ 				<div class="container">	
+ 					<a href="index.html" class="nav-logo"><img src="assets/img/placeholder-logo.png" alt="Logo"></a>
+ 								
+ 					<!-- Navigation-->
+ 					<div class="points">
+ 						<ul class="nav-points">
+ 							<li class="multiple">
+ 								<p>Shop</p>
+ 								<div class="dropdown">
+ 									<ul>
+ 										<li><a href="outfits.html">outfits</a></li>
+ 										<li><a href="shop.html">all items</a></li>
+ 									</ul>
+ 								</div>
+ 							</li>
+ 							<li><a href="about_us.html">About us</a></li>
+ 							<li><a href="support.html">Support</a></li>
+ 							<li><a href="arrivals.html">New Arrivals</a></li>
+ 							<li><a href="#modal" class="signUp" rel="modal:open">Sign Up</a></li>
+ 							<li class="cart-mobile"><a href="cart.html" class="cart-item">Cart <span class="items-count-block">[<span class="items-count">2</span>]</span></a></li>
+ 						</ul>
+ 								
+ 						<!-- Personal user account navigation -->
+ 						<div class="profile">
+ 							<div class="profile-img" data-src="assets/img/alex-michaelsen-1264418-unsplash.jpg">
+ 								<div class="profile-dropdown dropdown">
+ 									<div class="triangle"></div>
+ 									<ul>
+ 										<li><a href="settings.html">Settings</a></li>
+ 										<li><a href="wishlist.html">Wishlist</a></li>
+ 										<li><a href="collection.html">Collection</a></li>
+ 										<li><a href="outfits_saved.html">Saved outfits</a></li>
+ 										<li><a href="item_selections.html">Create outfit</a></li>
+ 										<li><a href="index-unlogged.html">Log out</a></li>
+ 									</ul>
+ 								</div>
+ 							</div>	
+ 						</div>
+ 		
+ 						<a class="cart" href="cart.html">
+ 							<i class="fas fa-shopping-bag"></i>
+ 							<div class="items-count">2</div>
+ 						</a>
+ 					</div>
+ 								
+ 					<div class="burger-mob">
+ 						<span></span>
+ 						<span></span>
+ 						<span></span>
+ 					</div>
+ 				</div>		
+ 			</nav>
+ 		</div>
+ 		<!-- Item filtering section -->
+ 		<div class="tools">
+ 			<div class="container">
+ 				<!-- Search -->
+ 				<div class="search-box">
+ 					<input type="text" class="search-input" placeholder="Search">
+ 				</div>
+ 				<div class="filters">
+ 					<div class="filter type" data-filter-type="type">
+ 						<!-- Type of clothing filter -->
+ 						<div class="filter-btn">
+ 							<div class="select"><i class="fas fa-caret-down"></i></div>
+ 							<div class="dropdown">
+ 								<ul>
+ 									<li data-filter-select="shoes"></li>
+ 									<li data-filter-select="jackets"></li>
+ 									<li data-filter-select="tee"></li>
+ 									<li data-filter-select="pants"></li>
+ 									<li data-filter-select="accessories"></li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 						<div class="filtered"></div>
+ 					</div>
+ 					
+ 					<!-- Pricing filter -->
+ 					<div class="filter pricing" data-filter-type="pricing">
+ 						<div class="filter-btn">
+ 							<div class="select"><i class="fas fa-caret-down"></i></div>
+ 							<div class="dropdown">
+ 								<ul>
+ 									<li data-filter-select="low-to-high"></li>
+ 									<li data-filter-select="high-to-low"></li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 						<div class="filtered"></div>
+ 					</div>
+ 
+ 					<!-- Brand filter -->
+ 					<div class="filter brand" data-filter-type="brand">
+ 						<div class="filter-btn">
+ 							<div class="select"><i class="fas fa-caret-down"></i></div>
+ 							<div class="dropdown">
+ 								<ul>
+ 									<li data-filter-select="nike"></li>
+ 									<li data-filter-select="adidas"></li>
+ 									<li data-filter-select="gucci"></li>
+ 									<li data-filter-select="tommy hilfiger"></li>
+ 									<li data-filter-select="zara"></li>
+ 									<li data-filter-select="reserved"></li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 						<div class="filtered"></div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 		
+ 		<!-- All the store items/products themselves -->
+ 		<div class="products">
+ 			<div class="container">
+ 				<div class="row shuffle">
+ 					<div class="item_outer col-lg-4 col-md-6" data-groups='["shoes", "nike"]' data-price="110">
+ 						<div class="item">
+ 							<div class="product-img lazyload" data-bgset="assets/img/huarache-min.jpg">
+ 								<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 							</div>
+ 							<div class="model">Nike huarache</div>
+ 							<div class="price">$110</div>
+ 							<div class="addToCart">Add to cart</div>
+ 						</div>
+ 					</div>
+ 					<div class="item_outer col-lg-4 col-md-6" data-groups='["jackets", "zara"]' data-price="65">
+ 						<div class="item">
+ 							<div class="product-img lazyload" data-bgset="assets/img/sorin-sirbu-509963-unsplash-min.jpg">
+ 								<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 							</div>
+ 							<div class="model">Zara jacket</div>
+ 							<div class="price">$65</div>
+ 							<div class="addToCart">Add to cart</div>
+ 						</div>
+ 					</div>
+ 					<div class="item_outer col-lg-4 col-md-6" data-groups='["accessories", "reserved"]' data-price="15">
+ 						<div class="item">
+ 							<div class="product-img lazyload" data-bgset="assets/img/reserved-bag.jpg">
+ 								<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 							</div>
+ 							<div class="model">Reserved bag</div>
+ 							<div class="price">$15</div>
+ 							<div class="addToCart">Add to cart</div>
+ 						</div>
+ 					</div>
+ 					<div class="item_outer col-lg-4 col-md-6" data-groups='["shoes", "nike"]' data-price="114">
+ 						<div class="item">
+ 							<div class="product-img lazyload" data-bgset="assets/img/air_max_720.jpg">
+ 								<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 							</div>
+ 							<div class="model">Nike air max 720</div>
+ 							<div class="price">$114</div>
+ 							<div class="addToCart">Add to cart</div>
+ 						</div>
+ 					</div>
+ 					<div class="item_outer col-lg-4 col-md-6" data-groups='["pants", "zara"]' data-price="47">
+ 						<div class="item">
+ 							<div class="product-img lazyload" data-bgset="assets/img/pants.jpg">
+ 								<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 							</div>
+ 							<div class="model">Zara pants</div>
+ 							<div class="price">$47</div>
+ 							<div class="addToCart">Add to cart</div>
+ 						</div>
+ 					</div>
+ 					<div class="item_outer col-lg-4 col-md-6" data-groups='["shoes", "adidas"]' data-price="79">
+ 						<div class="item">
+ 							<div class="product-img lazyload" data-bgset="assets/img/Superstar_Shoes_White.jpg">
+ 								<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 							</div>
+ 							<div class="model">Adidas superstars</div>
+ 							<div class="price">$79</div>
+ 							<div class="addToCart">Add to cart</div>
+ 						</div>
+ 					</div>
+ 					<div class="item_outer col-lg-4 col-md-6" data-groups='["shoes", "nike"]' data-price="99">
+ 						<div class="item">
+ 							<div class="product-img lazyload" data-bgset="assets/img/nike-airforce.jpg">
+ 								<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 							</div>
+ 							<div class="model">Nike air force</div>
+ 							<div class="price">$99</div>
+ 							<div class="addToCart">Add to cart</div>
+ 						</div>
+ 					</div>
+ 					<div class="item_outer col-lg-4 col-md-6" data-groups='["accessories", "gucci"]' data-price="2010">
+ 						<div class="item">
+ 							<div class="product-img lazyload" data-bgset="assets/img/gucci-purse.jpg">
+ 								<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 							</div>
+ 							<div class="model">Gucci purse</div>
+ 							<div class="price">$2010</div>
+ 							<div class="addToCart">Add to cart</div>
+ 						</div>
+ 					</div>
+ 					<div class="item_outer col-lg-4 col-md-6" data-groups='["tee", "tommy hilfiger"]' data-price="34">
+ 						<div class="item">
+ 							<div class="product-img lazyload" data-bgset="assets/img/hilfiger-tee.jpeg">
+ 								<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 							</div>
+ 							<div class="model">TH tee</div>
+ 							<div class="price">$34</div>
+ 							<div class="addToCart">Add to cart</div>
+ 						</div>
+ 					</div>
+ 					<div class="item_outer col-lg-4 col-md-6" data-groups='["accessories", "gucci"]' data-price="389">
+ 						<div class="item">
+ 							<div class="product-img lazyload" data-bgset="https://cache.net-a-porter.com/images/products/741153/741153_in_2000_q80.jpg">
+ 								<div class="buy-block"><a href="#" class="buy-btn">Buy</a></div>
+ 							</div>
+ 							<div class="model">Gucci belt</div>
+ 							<div class="price">$389</div>
+ 							<div class="addToCart">Add to cart</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</div>
+ 	</div>
+ 
+ 	<!-- Footer -->
+ 	<footer>
+ 		<div class="container">
+ 			<div class="nav-block">
+ 				<h2>Main navigation</h2>
+ 				<ul>
+ 					<li><a href="about_us.html">About us</a></li>
+ 					<li><a href="support.html">Support</a></li>
+ 					<li><a href="arrivals.html">New Arrivals</a></li>
+ 				</ul>
+ 			</div>
+ 			<div class="nav-block">
+ 				<h2>Shop</h2>
+ 				<ul>
+ 					<li><a href="outfits.html">Outfits</a></li>
+ 					<li><a href="shop.html">Products</a></li>
+ 				</ul>
+ 			</div>
+ 			
+ 			<ul class="social">
+ 				<li class="wow fadeIn"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.1s"><a href="https://dribbble.com/"><i class="fas fa-basketball-ball"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.2s"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.3s"><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+ 			</ul>
+ 		</div>
+ 		<div class="warning">
+ 			<div class="container">
+ 				<p>Copyright &copy;TheSlash 2020. All rights reserved.</p>
+ 			</div>
+ 		</div>
+ 	</footer>
+ 	<!-- Preloading / unloading screen -->
+ 	<div class="preloading-screen">
+ 		<div class="gooey">
+ 		  <span class="dot"></span>
+ 		  <div class="dots">
+ 		    <span></span>
+ 		    <span></span>
+ 		    <span></span>
+ 		  </div>
+ 		</div>
+ 	</div>
+ 	<!-- Javascript libaries -->
+ 	<script src="assets/js/libs.min.js"></script>
+ 	<script src="assets/js/wow.min.js"></script>
+ 	<script src="assets/js/shuffle.min.js"></script>
+ 	<script defer="" src="https://afarkas.github.io/lazysizes/plugins/bgset/ls.bgset.min.js"></script>
+ 	<script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js"></script>
+ 
+ 	<!-- Javascript page scripts -->
+ 	<script src="assets/js/common.js"></script>
+ 	<script src="assets/js/items.js"></script>
+ 
+ 	<script>
+ 		// ONLY FOR DEMONSTRATION PURPUSES
+ 		$(".item .buy-btn").on("click", (e) => {
+ 		    e.preventDefault();
+ 		    window.location.href = "../item.html";        
+ 		})
+ 	</script>
+ </body>
+ </html>

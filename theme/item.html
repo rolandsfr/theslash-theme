@@ -1,0 +1,241 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+ 	<title>TheSlash | Shop</title>
+ 
+ 	<!-- Page icon -->
+ 	<link rel="icon" href="assets/img/Roly Golden Logo.svg">
+ 
+ 	<!-- Libraries / external css / fonts -->
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+ 	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.css">
+ 
+ 	<!-- Page styling files (main styles / media quires)-->
+ 	<link rel="stylesheet" href="assets/css/main.css">
+ 	<link rel="stylesheet" href="assets/css/media.css">
+ 	<link rel="stylesheet" href="assets/css/interface.css">
+ 	<link rel="stylesheet" href="assets/css/interface_media.css">
+ 	<link rel="stylesheet" href="assets/css/modalStylesheets.css">
+ </head>
+ <body>
+ 	<div class="nav-overlay"></div>
+ 	<div id="wrapper">
+ 		<!-- Page menu -->
+ 		<div class="nav-outer">
+ 			<nav>
+ 				<div class="container">	
+ 					<a href="index.html" class="nav-logo"><img src="assets/img/placeholder-logo.png" alt="Logo"></a>
+ 								
+ 					<!-- Navigation-->
+ 					<div class="points">
+ 						<ul class="nav-points">
+ 							<li class="multiple">
+ 								<p>Shop</p>
+ 								<div class="dropdown">
+ 									<ul>
+ 										<li><a href="outfits.html">outfits</a></li>
+ 										<li><a href="shop.html">all items</a></li>
+ 									</ul>
+ 								</div>
+ 							</li>
+ 							<li><a href="about_us.html">About us</a></li>
+ 							<li><a href="support.html">Support</a></li>
+ 							<li><a href="arrivals.html">New Arrivals</a></li>
+ 							<li><a href="#modal" class="signUp" rel="modal:open">Sign Up</a></li>
+ 							<li class="cart-mobile"><a href="cart.html" class="cart-item">Cart <span class="items-count-block">[<span class="items-count">2</span>]</span></a></li>
+ 						</ul>
+ 								
+ 						<!-- Personal user account navigation -->
+ 						<div class="profile">
+ 							<div class="profile-img" data-src="assets/img/alex-michaelsen-1264418-unsplash.jpg">
+ 								<div class="profile-dropdown dropdown">
+ 									<div class="triangle"></div>
+ 									<ul>
+ 										<li><a href="settings.html">Settings</a></li>
+ 										<li><a href="wishlist.html">Wishlist</a></li>
+ 										<li><a href="collection.html">Collection</a></li>
+ 										<li><a href="outfits_saved.html">Saved outfits</a></li>
+ 										<li><a href="item_selections.html">Create outfit</a></li>
+ 										<li><a href="index-unlogged.html">Log out</a></li>
+ 									</ul>
+ 								</div>
+ 							</div>	
+ 						</div>
+ 		
+ 						<a class="cart" href="cart.html">
+ 							<i class="fas fa-shopping-bag"></i>
+ 							<div class="items-count">2</div>
+ 						</a>
+ 					</div>
+ 								
+ 					<div class="burger-mob">
+ 						<span></span>
+ 						<span></span>
+ 						<span></span>
+ 					</div>
+ 				</div>		
+ 			</nav>
+ 		</div>
+ 		<!-- Main block with all functionality needed to purchase the product or other related to it action -->
+ 		<main class="product fullScreen-resp">
+ 			<div class="container">
+ 				<div class="gallery wow fadeInLeft" data-wow-delay="0.2s">
+ 					<div class="small-images">
+ 						<!-- 3 images on the side of the main image (clickable / interactive) -->
+ 						<div data-src="assets/img/Interface-images/huarache-1.png" class="small-img"></div>
+ 						<div data-src="assets/img/Interface-images/huarache-2.png" class="small-img"></div>
+ 						<div data-src="assets/img/Interface-images/huarache-3.png" class="small-img"></div>
+ 					</div>
+ 					<!-- Main image -->
+ 					<div data-src="assets/img/Interface-images/huarache-main.png" data-original="assets/img/Interface-images/huarache-main.png" class="main-image"></div>
+ 				</div>
+ 				
+ 				<!-- All buttons / information related to the product -->
+ 				<div class="product-info wow fadeInUp">
+ 					<div class="flex-container">
+ 						<!-- Product name -->
+ 						<div class="product-info-main">
+ 							<h2 class="product-name">Nike huarache</h2>
+ 
+ 							<div class="size">
+ 								<a href="#">s</a>
+ 								<a href="#">m</a>
+ 								<a href="#">l</a>
+ 								<a href="#">xl</a>
+ 							</div>
+ 										
+ 							<div class="color">
+ 								<a href="#">black</a>
+ 								<a href="#">pink</a>
+ 								<a href="#">white</a>
+ 							</div>
+ 							
+ 							<!-- Destination -->
+ 							<div class="dest">
+ 								<a href="#" class="base">at base</a>
+ 								<a href="#" class="deliv">delivery</a>
+ 							</div>
+ 										
+ 							<p class="price">US $100</p>
+ 						</div>
+ 
+ 						<!--Buttons -->
+ 						<div class="ad-options">
+ 							<a href="#" class="ad-option">add to wishlist</a>
+ 							<a href="#" class="ad-option">add to collection</a>
+ 							<a href="#" class="addToCart">Add to cart</a> <br>
+ 
+ 							<a href="#" class="buy-btn">buy</a>
+ 
+ 							<!-- Error message -->
+ 							<p class="buy-error-handler"></p>						
+ 
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 		</main>
+ 	</div>
+ 
+ 	<!-- Footer -->
+ 	<footer>
+ 		<div class="container">
+ 			<div class="nav-block">
+ 				<h2>Main navigation</h2>
+ 				<ul>
+ 					<li><a href="about_us.html">About us</a></li>
+ 					<li><a href="support.html">Support</a></li>
+ 					<li><a href="arrivals.html">New Arrivals</a></li>
+ 				</ul>
+ 			</div>
+ 			<div class="nav-block">
+ 				<h2>Shop</h2>
+ 				<ul>
+ 					<li><a href="outfits.html">Outfits</a></li>
+ 					<li><a href="shop.html">Products</a></li>
+ 				</ul>
+ 			</div>
+ 			
+ 			<ul class="social">
+ 				<li class="wow fadeIn"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.1s"><a href="https://dribbble.com/"><i class="fas fa-basketball-ball"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.2s"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.3s"><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+ 			</ul>
+ 		</div>
+ 		<div class="warning">
+ 			<div class="container">
+ 				<p>Copyright &copy;TheSlash 2020. All rights reserved.</p>
+ 			</div>
+ 		</div>
+ 	</footer>
+ 	<!-- Payment modal -->
+ 	<div class="proccess-modal"></div>
+ 
+ 	<div class="modal-window details-modal">
+ 		<div class="modal__inner">
+ 			<span class="close-modal"><span class="fa fa-times"></span></span>
+ 			<div class="modal-navigation">
+ 				<a href="#" class="activeNode" data-target="dest-section">Choose address <i class="fas fa-chevron-right"></i></a>
+ 				<a href="#" data-target="payment-section">Choose payment method</a>
+ 			</div>
+ 			<section class="dest-section">
+ 
+ 				<!-- Your base location addresses -->
+ 				<div class="addresses-block">
+ 					<ul class="base-addresses">
+ 						<li class="base-address">3802 LONELY OAK DRIVE, MINNESOTA 2431 US</li>
+ 						<li class="base-address">3802 LONELY OAK DRIVE, MINNESOTA 2431 US</li>
+ 					</ul>
+ 
+ 					<!-- User added addresses (their own) -->
+ 					<ul class="user-addresses">
+ 						<li class="user-address isActive" data-mark-color="red">3802 LONELY OAK DRIVE, MINNESOTA 2431 US</li>
+ 						<li class="user-address">3345 LONELY OAK DRIVE, MINNESOTA 2421 US</li>
+ 					</ul>
+ 
+ 					<!-- Error handler -->
+ 					<p class="dest-error">Please, select the destination address</p>
+ 
+ 				</div>
+ 			</section>
+ 				
+ 			<!-- Payment section -->
+ 			<section class="payment-section">
+ 
+ 				<!-- Error message -->
+ 				<div class="dialog-handler">Please, select one option from each section</div>
+ 				<!-- Userr added payment methods -->
+ 				<ul class="payment-methods">
+ 					<li class="card isActive">**** **** **** 1234</li>
+ 					<li class="card">**** **** **** 3253</li>
+ 					<li class="wallet">SarahBlackwood@gmail.com</li>
+ 				</ul>
+ 
+ 			</section>
+ 		</div>
+ 	</div>
+ 
+ 	<!-- Preloading / unloading screen -->
+ 	<div class="preloading-screen">
+ 		<div class="gooey">
+ 		  <span class="dot"></span>
+ 		  <div class="dots">
+ 		    <span></span>
+ 		    <span></span>
+ 		    <span></span>
+ 		  </div>
+ 		</div>
+ 	</div>
+ 	<!-- Javascript libaries -->
+ 	<script src="assets/js/libs.min.js"></script>
+ 	<script src="assets/js/wow.min.js"></script>
+ 
+ 	<!-- Javascript page scripts -->
+ 	<script src="assets/js/common.js"></script>
+ 	<script src="assets/js/buyingInterface.js"></script>
+ </body>
+ </html>

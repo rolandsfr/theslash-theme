@@ -1,0 +1,290 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+ 	<title>TheSlash | Edit outfit</title>
+ 
+ 	<!-- Page icon -->
+ 	<link rel="icon" href="assets/img/Roly Golden Logo.svg">
+ 
+ 	<!-- Libraries / external css / fonts -->
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+ 	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.css">
+ 
+ 	<!-- Page styling files (main styles / media quires)-->
+ 	<link rel="stylesheet" href="assets/css/main.css">
+ 	<link rel="stylesheet" href="assets/css/media.css">
+ 	<link rel="stylesheet" href="assets/css/outfits.css">
+ 	<link rel="stylesheet" href="assets/css/outfits_media.css">
+     <link rel="stylesheet" href="assets/css/edit_outfit.css">   
+ </head>
+ <body>
+ 	<div class="viewport-size"></div>
+ 	<div class="nav-overlay"></div>
+ 
+ 	<div id="wrapper">
+ 		<!-- Page menu -->
+ 		<div class="nav-outer">
+ 			<nav>
+ 				<div class="container">	
+ 					<a href="index.html" class="nav-logo"><img src="assets/img/placeholder-logo.png" alt="Logo"></a>
+ 								
+ 					<!-- Navigation-->
+ 					<div class="points">
+ 						<ul class="nav-points">
+ 							<li class="multiple">
+ 								<p>Shop</p>
+ 								<div class="dropdown">
+ 									<ul>
+ 										<li><a href="outfits.html">outfits</a></li>
+ 										<li><a href="shop.html">all items</a></li>
+ 									</ul>
+ 								</div>
+ 							</li>
+ 							<li><a href="about_us.html">About us</a></li>
+ 							<li><a href="support.html">Support</a></li>
+ 							<li><a href="arrivals.html">New Arrivals</a></li>
+ 							<li><a href="#modal" class="signUp" rel="modal:open">Sign Up</a></li>
+ 							<li class="cart-mobile"><a href="cart.html" class="cart-item">Cart <span class="items-count-block">[<span class="items-count">2</span>]</span></a></li>
+ 						</ul>
+ 								
+ 						<!-- Personal user account navigation -->
+ 						<div class="profile">
+ 							<div class="profile-img" data-src="assets/img/alex-michaelsen-1264418-unsplash.jpg">
+ 								<div class="profile-dropdown dropdown">
+ 									<div class="triangle"></div>
+ 									<ul>
+ 										<li><a href="settings.html">Settings</a></li>
+ 										<li><a href="wishlist.html">Wishlist</a></li>
+ 										<li><a href="collection.html">Collection</a></li>
+ 										<li><a href="outfits_saved.html">Saved outfits</a></li>
+ 										<li><a href="item_selections.html">Create outfit</a></li>
+ 										<li><a href="index-unlogged.html">Log out</a></li>
+ 									</ul>
+ 								</div>
+ 							</div>	
+ 						</div>
+ 		
+ 						<a class="cart" href="cart.html">
+ 							<i class="fas fa-shopping-bag"></i>
+ 							<div class="items-count">2</div>
+ 						</a>
+ 					</div>
+ 								
+ 					<div class="burger-mob">
+ 						<span></span>
+ 						<span></span>
+ 						<span></span>
+ 					</div>
+ 				</div>		
+ 			</nav>
+ 		</div>
+ 		<!-- Outfit which user intentds to edit -->
+ 		<section class="outfit">
+ 			<div class="container">
+ 				<div class="outfit-info">
+ 					<div class="outfit-img wow fadeInUp" data-src="assets/img/parker-whitson-wKmTQ1yXsVw-unsplash.jpg"></div>
+ 					<div class="outfit-descr wow fadeInUp" data-wow-delay="0.1s">
+ 						<div class="outfit-name-wrapper">
+ 							<!-- Name of the outfit -->
+                             <h2 class="slashes">//</h2><input class="outfit-name-in" placeholder="Name of the look" value="Watch me">
+ 						</div>
+ 						<!-- Outfit description -->
+ 						<textarea class="outfit-text-in" placeholder="Description">Feeling confident? Rock this thrift to practically anywhere, the park, school, shopping, cruising on your skateboard. Brings out the best vibes! White shirt with a colorful print and Adidas Yeezy makes this outfit stand out and very fitting for casual daily look.</textarea>
+ 					</div>
+ 				</div>
+ 			</div>
+ 
+ 			<!-- Products related to the outfit -->
+ 			<div class="products">
+ 				<div class="container-fluid container">
+ 					<div class="row shuffle">
+ 						<div class="item_outer col-lg-4 col-md-6">
+ 							<div class="item">
+ 								<div class="product-img lazyload" data-src="assets/img/nike-airforce.jpg">
+ 									<!-- .removeItem icon removes item from outfit on click -->
+ 									<div class="removeItem">&times;</div>
+ 								</div>
+ 								<div class="model">Nike air force</div>
+ 								<div class="price">$99</div>
+ 								<div class="addToCart">Add to cart</div>
+ 							</div>
+ 						</div>
+ 						<div class="item_outer col-lg-4 col-md-6">
+ 							<div class="item">
+ 								<div class="product-img lazyload" data-src="assets/img/hilfiger-tee.jpeg">
+ 									<div class="removeItem">&times;</div>
+ 								</div>
+ 								<div class="model">TH tee</div>
+ 								<div class="price">$34</div>
+ 								<div class="addToCart">Add to cart</div>
+ 							</div>
+ 						</div>
+ 						<div class="item_outer col-lg-4 col-md-6">
+ 							<div class="item">
+ 								<div class="product-img lazyload" data-src="https://cache.net-a-porter.com/images/products/741153/741153_in_2000_q80.jpg">
+ 									<div class="removeItem">&times;</div>
+ 								</div>
+ 								<div class="model">Gucci belt</div>
+ 								<div class="price">$389</div>
+ 								<div class="addToCart">Add to cart</div>
+ 							</div>
+ 						</div>
+ 
+ 						<div class="sizer col-lg-4 col-md-6"></div>
+ 					</div>
+ 				</div>
+ 			</div>
+         </section>        
+ 	</div>
+ 
+ 	<div class="container edit-footer">
+ 
+ 		<p class="outfit-error"></p>
+ 
+ 		<div class="edit-btns">
+ 			<!-- Redirection to the page where user can add more items to this outfit section -->
+ 
+ 			 <a href="addItems.html" class="addItems"><i class="fas fa-plus-circle"></i><span class="addItems-text">
+             	Add items
+        		</span></a>
+ 
+ 	        <!-- Button that saves changes -->
+ 		    <a href="outfits_saved.html" class="saveChanges-btn">Save changes</a>
+ 		</div>
+ 	</div>
+ 	
+ 	<!-- Footer -->
+ 	<footer>
+ 		<div class="container">
+ 			<div class="nav-block">
+ 				<h2>Main navigation</h2>
+ 				<ul>
+ 					<li><a href="about_us.html">About us</a></li>
+ 					<li><a href="support.html">Support</a></li>
+ 					<li><a href="arrivals.html">New Arrivals</a></li>
+ 				</ul>
+ 			</div>
+ 			<div class="nav-block">
+ 				<h2>Shop</h2>
+ 				<ul>
+ 					<li><a href="outfits.html">Outfits</a></li>
+ 					<li><a href="shop.html">Products</a></li>
+ 				</ul>
+ 			</div>
+ 			
+ 			<ul class="social">
+ 				<li class="wow fadeIn"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.1s"><a href="https://dribbble.com/"><i class="fas fa-basketball-ball"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.2s"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.3s"><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+ 			</ul>
+ 		</div>
+ 		<div class="warning">
+ 			<div class="container">
+ 				<p>Copyright &copy;TheSlash 2020. All rights reserved.</p>
+ 			</div>
+ 		</div>
+ 	</footer>
+ 	<!-- Preloading / unloading screen -->
+ 	<div class="preloading-screen">
+ 		<div class="gooey">
+ 		  <span class="dot"></span>
+ 		  <div class="dots">
+ 		    <span></span>
+ 		    <span></span>
+ 		    <span></span>
+ 		  </div>
+ 		</div>
+ 	</div>
+ 	<!-- Javascript libaries -->
+ 	<script src="assets/js/libs.min.js"></script>
+ 	<script src="assets/js/wow.min.js"></script>
+ 
+ 	<!-- Javascript page scripts -->
+ 	<script src="assets/js/common.js"></script>
+ 
+ 	<!-- Script exlusive to the page -->
+ 	<script>
+ 		"use strict"
+ 
+ 		if($(document).width() >= 1024) {
+ 			$(".fullScreen-resp").removeClass("fullScreen-resp").addClass("fullScreen");
+ 			$(".fullScreen, .fullScreen .outfits-intro").css("min-height", $(window).height() - $(".nav-outer").outerHeight() + "px");
+ 
+ 			$('.titles-container').detach().appendTo("aside");
+ 			$('.main-descr-container').detach().appendTo("aside");
+ 			$('.discover-btn').detach().appendTo("aside");
+ 		} else {
+ 			$(".fullScreen-resp > .container").removeClass("container");
+ 			$(".fullScreen-resp").css("min-height", $(".fullScreen-resp > div").outerHeight());
+ 			$(".fullScreen").removeClass("fullScreen").addClass("fullScreen-resp");
+ 			$('.titles-container').detach().insertBefore(".images-block");
+ 			$('.main-descr-container').detach().insertAfter("aside");	
+ 			$('.discover-btn').detach().appendTo(".images-block");
+ 		}
+ 
+ 		$(window).resize(() => {
+ 			if($(document).width() >= 1024) {
+ 				$(".fullScreen-resp").removeClass("fullScreen-resp").addClass("fullScreen");
+ 				$(".fullScreen > div").addClass("container");
+ 
+ 				$(".fullScreen, .fullScreen .outfits-intro").css("min-height", $(window).height() - $(".nav-outer").outerHeight() + "px");
+ 
+ 				$('.titles-container').detach().appendTo("aside");
+ 				$('.main-descr-container').detach().appendTo("aside");
+ 				$('.discover-btn').detach().appendTo("aside");
+ 
+ 			} else {
+ 				$(".fullScreen").removeClass("fullScreen").addClass("fullScreen-resp");
+ 				$(".fullScreen-resp > .container").removeClass("container");
+ 
+ 				$(".fullScreen-resp").css("min-height", $(".fullScreen-resp > div").height());
+ 				$(".fullScreen-resp .outfits-intro").css("min-height", "400px");
+ 
+ 				$('.titles-container').detach().insertBefore(".images-block");
+ 				$('.main-descr-container').detach().insertAfter("aside");	
+ 				$('.discover-btn').detach().appendTo(".images-block");
+ 			}
+ 		});
+ 
+ 		// Removes item from outfit when user clicks on x icon
+ 		$(".removeItem").click((e) => {
+ 			$(e.target).closest(".item").animate({opacity: 0}, 500, () => {
+ 				$(e.target).closest(".item_outer").remove();
+ 			});
+ 
+ 			console.log($(".item_outer").length)
+ 
+ 			if($(".item").length === 1) $(".products").hide();
+ 		})
+ 
+ 		// When user tries to save changes in outfit
+ 		$(".saveChanges-btn").click((e) => {
+ 			// If at least 1 field is empty
+ 			if ($("input").val() === "" || $("textarea").val() === ""){
+ 				// Prevents redirection
+ 				e.preventDefault();
+ 				// Shows an error 
+ 				$(".outfit-error").html("Fill in all the fields, please.").show();
+ 			} else {
+ 				// If user has deleted all items from outfit
+ 				if(!$(".item").length) {
+ 					// Prevents redirection
+ 					e.preventDefault();
+ 
+ 					// Shows an error (user has to have at least 1 item in outfit in order to save chnages)
+ 					// Scrolls page to top for user to see the error
+ 					$(".outfit-error").html("There should be at least one item associated with the outfit. Add at least 1 item in order to save changes.").show();
+ 				} else {
+ 					// If everything had been successfully validated - hides error and redirects to page with all the saved outfits user has
+ 					$(".outfit-error").hide();
+ 				}
+ 			}
+ 		})	
+ 
+ 	</script>
+ </body>
+ </html>

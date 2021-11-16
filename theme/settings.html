@@ -1,0 +1,445 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1, maximum-scale=1, user-scalable=0">
+ 	<title>TheSlash | Settings</title>
+ 
+ 	<!-- Page icon -->
+ 	<link rel="icon" href="assets/img/Roly Golden Logo.svg">
+ 
+ 	<!-- Libraries / external css / fonts -->
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+ 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.css">
+ 	<link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+ 	
+ 	<!-- Page styling files (main styles / media quires)-->
+ 	<link rel="stylesheet" href="assets/css/main.css">
+ 	<link rel="stylesheet" href="assets/css/media.css">
+     <link rel="stylesheet" href="assets/css/settings.css">
+ 	<link rel="stylesheet" href="assets/css/settings_media.css">
+ </head>
+ <body>
+ 	<div class="viewport-size"></div>
+ 	<div class="nav-overlay"></div>
+ 
+ 	<div id="wrapper">
+ 		<!-- Page menu -->
+ 		<div class="nav-outer">
+ 			<nav>
+ 				<div class="container">	
+ 					<a href="index.html" class="nav-logo"><img src="assets/img/placeholder-logo.png" alt="Logo"></a>
+ 								
+ 					<!-- Navigation-->
+ 					<div class="points">
+ 						<ul class="nav-points">
+ 							<li class="multiple">
+ 								<p>Shop</p>
+ 								<div class="dropdown">
+ 									<ul>
+ 										<li><a href="outfits.html">outfits</a></li>
+ 										<li><a href="shop.html">all items</a></li>
+ 									</ul>
+ 								</div>
+ 							</li>
+ 							<li><a href="about_us.html">About us</a></li>
+ 							<li><a href="support.html">Support</a></li>
+ 							<li><a href="arrivals.html">New Arrivals</a></li>
+ 							<li><a href="#modal" class="signUp" rel="modal:open">Sign Up</a></li>
+ 							<li class="cart-mobile"><a href="cart.html" class="cart-item">Cart <span class="items-count-block">[<span class="items-count">2</span>]</span></a></li>
+ 						</ul>
+ 								
+ 						<!-- Personal user account navigation -->
+ 						<div class="profile">
+ 							<div class="profile-img" data-src="assets/img/alex-michaelsen-1264418-unsplash.jpg">
+ 								<div class="profile-dropdown dropdown">
+ 									<div class="triangle"></div>
+ 									<ul>
+ 										<li><a href="settings.html">Settings</a></li>
+ 										<li><a href="wishlist.html">Wishlist</a></li>
+ 										<li><a href="collection.html">Collection</a></li>
+ 										<li><a href="outfits_saved.html">Saved outfits</a></li>
+ 										<li><a href="item_selections.html">Create outfit</a></li>
+ 										<li><a href="index-unlogged.html">Log out</a></li>
+ 									</ul>
+ 								</div>
+ 							</div>	
+ 						</div>
+ 		
+ 						<a class="cart" href="cart.html">
+ 							<i class="fas fa-shopping-bag"></i>
+ 							<div class="items-count">2</div>
+ 						</a>
+ 					</div>
+ 								
+ 					<div class="burger-mob">
+ 						<span></span>
+ 						<span></span>
+ 						<span></span>
+ 					</div>
+ 				</div>		
+ 			</nav>
+ 		</div>
+ 		<!-- All settings are in this block -->
+ 		<div class="settings-block">
+ 			<div class="container">
+ 				<div class="settings-tab wow fadeInUp">
+ 					<p class="sub-name">Welcome to your profile, <span class="user-name">Sarah</span>!</p>
+ 					<i class="fas fa-cog"></i> 
+ 				</div>
+ 				
+ 				<div class="grid">
+ 					<div class="setting-section">
+ 						<!-- Block with user addresses -->
+ 						<div class="setting-wrapper wow fadeInUp">
+ 							<div class="address-block setting-type">
+ 								<!-- User enters his data here (all inputs) -->
+ 								<div class="settings-entry">
+ 									<!-- Title of block -->
+ 									<p class="settings-name"><i class="fas fa-map-marker-alt"></i> address</p>
+ 									<p class="address-error"></p>
+ 
+ 									<label for="street">Street</label>
+ 									<input type="text" name="street" id="street">
+ 									<div class="sidebyside">
+ 										<div class="field">
+ 											<label for="city">City / State</label>
+ 											<input type="text" name="city" id="city">
+ 										</div>
+ 
+ 										<div class="field">
+ 											<label for="code">Zip-code</label>
+ 											<input name="zip-code" id="code">
+ 										</div>
+ 									</div>
+ 
+ 									<label for="country">Country</label>
+ 									<input type="text" name="country" id="country">
+ 
+ 									<a href='#' class="btn-add-address">add address</a>
+ 								</div>
+ 							</div>
+ 							<div class="setting-data">
+ 								<!-- Contains all addresses (limit - 5) -->
+ 								<div class="setting-data-inner">
+ 									<!-- Class taken - user has added a custom address; Class free - address that hasn't been added yet -->
+ 									<div class="address-info taken">
+ 										<p class="address-line">3802  Lonely Oak Drive, Minnesota 2431 US</p>
+ 										<div class="address-btns">
+ 											<a href="#" class="set-active">set active</a>
+ 											<div class="mark-block">
+ 												<a href="#" class="mark">mark</a>
+ 
+ 												<!-- Colors to make address stand out -->
+ 												<div class="colors-block">
+ 													<div class="row">
+ 														<span class="color" data-color="none"></span>
+ 														<span class="color" data-color="green"></span>
+ 														<span class="color" data-color="yellow"></span>
+ 													</div>	
+ 													<div class="row">
+ 														<span class="color" data-color="blue"></span>
+ 														<span class="color" data-color="pink"></span>
+ 														<span class="color" data-color="lime"></span>
+ 													</div>	
+ 													<div class="row">
+ 														<span class="color" data-color="magenta"></span>
+ 														<span class="color" data-color="brown"></span>
+ 														<span class="color" data-color="purple"></span>
+ 													</div>	
+ 												</div>
+ 											</div>
+ 									
+ 											<a href="#" class="remove-address">remove</a>
+ 										</div>
+ 									</div>
+ 							
+ 									<div class="address-info free">
+ 										<p class="address-line">san francisco, jump st <span class="show-more">...</span></p>
+ 										<div class="address-btns">
+ 											<a href="#" class="set-active">set active</a>
+ 											<div class="mark-block">
+ 												<a href="#" class="mark">mark</a>
+ 
+ 												<div class="colors-block">
+ 													<div class="row">
+ 														<span class="color" data-color="none"></span>
+ 														<span class="color" data-color="green"></span>
+ 														<span class="color" data-color="yellow"></span>
+ 													</div>	
+ 													<div class="row">
+ 														<span class="color" data-color="blue"></span>
+ 														<span class="color" data-color="pink"></span>
+ 														<span class="color" data-color="lime"></span>
+ 													</div>	
+ 													<div class="row">
+ 														<span class="color" data-color="magenta"></span>
+ 														<span class="color" data-color="brown"></span>
+ 														<span class="color" data-color="purple"></span>
+ 													</div>	
+ 												</div>
+ 											</div>
+ 											<a href="#" class="remove-address">remove</a>
+ 										</div>
+ 									</div>
+ 									<div class="address-info free">
+ 										<p class="address-line">san francisco, jump st <span class="show-more">...</span></p>
+ 										<div class="address-btns">
+ 											<a href="#" class="set-active">set active</a>
+ 											<div class="mark-block">
+ 												<a href="#" class="mark">mark</a>
+ 
+ 												<div class="colors-block">
+ 													<div class="row">
+ 														<span class="color" data-color="none"></span>
+ 														<span class="color" data-color="green"></span>
+ 														<span class="color" data-color="yellow"></span>
+ 													</div>	
+ 													<div class="row">
+ 														<span class="color" data-color="blue"></span>
+ 														<span class="color" data-color="pink"></span>
+ 														<span class="color" data-color="lime"></span>
+ 													</div>	
+ 													<div class="row">
+ 														<span class="color" data-color="magenta"></span>
+ 														<span class="color" data-color="brown"></span>
+ 														<span class="color" data-color="purple"></span>
+ 													</div>	
+ 												</div>
+ 											</div>
+ 											<a href="#" class="remove-address">remove</a>
+ 										</div>
+ 									</div>
+ 									<div class="address-info free">
+ 										<p class="address-line">san francisco, jump st <span class="show-more">...</span></p>
+ 										<div class="address-btns">
+ 											<a href="#" class="set-active">set active</a>
+ 											<div class="mark-block">
+ 												<a href="#" class="mark">mark</a>
+ 
+ 												<div class="colors-block">
+ 													<div class="row">
+ 														<span class="color" data-color="none"></span>
+ 														<span class="color" data-color="green"></span>
+ 														<span class="color" data-color="yellow"></span>
+ 													</div>	
+ 													<div class="row">
+ 														<span class="color" data-color="blue"></span>
+ 														<span class="color" data-color="pink"></span>
+ 														<span class="color" data-color="lime"></span>
+ 													</div>	
+ 													<div class="row">
+ 														<span class="color" data-color="magenta"></span>
+ 														<span class="color" data-color="brown"></span>
+ 														<span class="color" data-color="purple"></span>
+ 													</div>	
+ 												</div>
+ 											</div>
+ 											<a href="#" class="remove-address">remove</a>
+ 										</div>
+ 									</div>
+ 									<div class="address-info free">
+ 										<p class="address-line">san francisco, jump st <span class="show-more">...</span></p>
+ 										<div class="address-btns">
+ 											<a href="#" class="set-active">set active</a>
+ 											<div class="mark-block">
+ 												<a href="#" class="mark">mark</a>
+ 
+ 												<div class="colors-block">
+ 													<div class="row">
+ 														<span class="color" data-color="none"></span>
+ 														<span class="color" data-color="green"></span>
+ 														<span class="color" data-color="yellow"></span>
+ 													</div>	
+ 													<div class="row">
+ 														<span class="color" data-color="blue"></span>
+ 														<span class="color" data-color="pink"></span>
+ 														<span class="color" data-color="lime"></span>
+ 													</div>	
+ 													<div class="row">
+ 														<span class="color" data-color="magenta"></span>
+ 														<span class="color" data-color="brown"></span>
+ 														<span class="color" data-color="purple"></span>
+ 													</div>	
+ 												</div>
+ 											</div>
+ 											<a href="#" class="remove-address">remove</a>
+ 										</div>
+ 									</div>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 	
+ 					<div class="setting-section">
+ 						<div class="screen">
+ 							<!-- BLock with personal information settings -->
+ 							<div class="setting-wrapper private-wrapper wow fadeInUp">
+ 								<div class="private-info-block setting-type">
+ 									<div class="settings-entry">
+ 										<!-- Block title -->
+ 										<p class="settings-name"><i class="far fa-user"></i> Credentials</p>
+ 										<!-- Personal user information -->
+ 										<label for="fullname">Full name</label>
+ 										<input type="text" name="fullname" id="fullname" value="Sarah Blackwood">
+ 
+ 										<label for="email">Your email</label>
+ 										<input type="text" name="email" id="email" value="sarahblackwood@gmail.com">
+ 										
+ 										<!-- Error / warning -->
+ 										<p class="settings-warning">
+ 											Please, confirm your email address by following instructions sent to your email!
+ 										</p>
+ 										
+ 										<!-- Buttons to verify / authorize email -->
+ 										<div class="verify-btns">
+ 											<a href='#' class="btn-verify btn-verify-email">resend verification email</a>
+ 											<a href="#" class="btn-verify btn-auth-email">Athorize new email</a>
+ 										</div>
+ 									</div>
+ 
+ 									<div class="profile-img-wrapper">
+ 										<!-- User profile picture -->
+ 										<div class="set-profile-img" data-src="assets/img/alex-michaelsen-1264418-unsplash.jpg">
+ 										</div>
+ 										<label for="img-input"><i class="fas fa-pencil-alt"></i></label>
+ 										<input type="file" id="img-input">
+ 									</div>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 	
+ 					<div class="setting-section">
+ 						<div class="setting-wrapper wow fadeInUp">
+ 							<!-- Block with payment methods that user adds / added -->
+ 							<div class="payments setting-type">
+ 								<!-- Titles -->
+ 								<div class="settings-entry">
+ 									<p class="settings-name"><i class="far fa-credit-card"></i>payment methods</p>
+ 								</div>
+ 								<p class="protip">
+ 									select method
+ 								</p>
+ 								
+ 								<!-- Input areas to add card information -->
+ 								<div class="card-section">
+ 									<p class="selection">Credit card <i class="fas fa-caret-up"></i></p>
+ 									<p class="card-error-msg"></p>
+ 		
+ 									<div class="payment-block">
+ 										<label for="cardholder">Cardholder's name</label>
+ 										<input type="text" name="cardholder" id="cardholder">
+ 
+ 
+ 										<label for="number">Card's number</label>
+ 										<input type="text" name="number" id="number">
+ 			
+ 										<div class="sidebyside">
+ 											<div class="field">
+ 												<label for="date" class="date">Expiration date</label>
+ 												<input type="text" name="date" id="date">
+ 											</div>
+ 
+ 											<div class="field">
+ 												<label for="cvc">CVC</label>
+ 												<input type="text" name="cvc" id="cvc">
+ 											</div>
+ 										</div>
+ 			
+ 										<a href="#" class="btn-save-card">save card</a>
+ 									</div>
+ 								</div>
+ 								
+ 								<!-- User selects convenient online wallet and gets redirected (server side script) -->
+ 								<div class="online-wallet-section">
+ 									<p class="selection">Online wallet <i class="fas fa-caret-up"></i></p>
+ 									<div class="payment-block">
+ 										<ul>
+ 											<li><a href="#">paypal</a></li>
+ 											<li><a href="#">webmoney</a></li>
+ 											<li><a href="#">yandex money</a></li>
+ 											<li><a href="#">qiwi</a></li>
+ 										</ul>
+ 									</div>
+ 		
+ 								</div>
+ 							</div>
+ 		
+ 							<div class="setting-data payments-block">
+ 								<!-- Container with all saved payment methods -->
+ 								<div class="setting-data-inner">
+ 									<!-- Saved cards -->
+ 									<div class="card-saved">
+ 										<p class="card"><i class="fab fa-cc-mastercard"></i> <span class="cardnr">**** **** **** 0945</span ><span class="remove-payment">&times;</span></p>
+ 									</div>
+ 									
+ 									<!-- Saved online wallets -->
+ 									<div class="online-wallet-saved">
+ 										<p class="wallet"><i class="fab fa-paypal"></i> <span class="credentials">SarahBlackwood@gmail.com</span> <span class="remove-payment">&times;</span></p>
+ 									</div>
+ 								</div>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>	
+ 
+ 				<!-- Saves all made changes in user settings -->
+ 				<a href="#" class="save-btn wow fadeInLeft">save changes</a>	
+ 			</div>
+ 
+ 		</div>
+ 	</div>
+ 
+ 	<!-- Footer -->
+ 	<footer>
+ 		<div class="container">
+ 			<div class="nav-block">
+ 				<h2>Main navigation</h2>
+ 				<ul>
+ 					<li><a href="about_us.html">About us</a></li>
+ 					<li><a href="support.html">Support</a></li>
+ 					<li><a href="arrivals.html">New Arrivals</a></li>
+ 				</ul>
+ 			</div>
+ 			<div class="nav-block">
+ 				<h2>Shop</h2>
+ 				<ul>
+ 					<li><a href="outfits.html">Outfits</a></li>
+ 					<li><a href="shop.html">Products</a></li>
+ 				</ul>
+ 			</div>
+ 			
+ 			<ul class="social">
+ 				<li class="wow fadeIn"><a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.1s"><a href="https://dribbble.com/"><i class="fas fa-basketball-ball"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.2s"><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+ 				<li class="wow fadeIn" data-wow-delay="0.3s"><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+ 			</ul>
+ 		</div>
+ 		<div class="warning">
+ 			<div class="container">
+ 				<p>Copyright &copy;TheSlash 2020. All rights reserved.</p>
+ 			</div>
+ 		</div>
+ 	</footer>
+ 	<!-- Preloading / unloading screen -->
+ 	<div class="preloading-screen">
+ 		<div class="gooey">
+ 		  <span class="dot"></span>
+ 		  <div class="dots">
+ 		    <span></span>
+ 		    <span></span>
+ 		    <span></span>
+ 		  </div>
+ 		</div>
+ 	</div>
+ 	<!-- Javascript libaries -->
+     <script src="assets/js/libs.min.js"></script>
+ 	<script src="assets/js/wow.min.js"></script>
+ 
+ 	<!-- Javascript page scripts -->
+ 	<script src="assets/js/settings.js"></script>
+ 	<script src="assets/js/common.js"></script>
+ </body>
+ </html>
