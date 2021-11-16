@@ -11,6 +11,11 @@ Minimalistic e-commerce site template/theme for online clothing stores.
 | Colors   | Blue, black, white          |
 | Pages    | 24                          |
 
+# Theme itself
+
+You can find the theme in the [/theme](https://github.com/rolandsfr/theslash-theme/tree/main/theme) directory
+Demo is deployed [here](https://theslash.netlify.app/)
+
 
 ## About the project & history
 
