@@ -25,4 +25,4 @@ The original theme bundle (the one intended for sell) has been lost, thus making
 
 ## License
 
-[gnu general public license](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[GNU GENERAL PUBLIC LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html)
