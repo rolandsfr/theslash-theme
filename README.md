@@ -1,7 +1,7 @@
 # TheSlash theme
 
 > *Minimalistic e-commerce site template/theme for online clothing stores.*
-
+</br>
   
 ## Properties
   
@@ -11,7 +11,7 @@
 | Colors   | Blue, black, white          |
 | Pages    | 24                          |
 
-# Theme itself
+## Theme itself
 
 You can find the theme in the [/theme](https://github.com/rolandsfr/theslash-theme/tree/main/theme) directory  
 A demo is deployed [here](https://theslash.netlify.app/)  
