@@ -1,3 +1,6 @@
+![](https://github.com/user/theslash_banner.png)
+
+
 # TheSlash theme
 
 > *Minimalistic e-commerce site template/theme for online clothing stores.*
