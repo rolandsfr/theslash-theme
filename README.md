@@ -1,4 +1,4 @@
-![](https://github.com/user/theslash_banner.png)
+![](https://raw.githubusercontent.com/rolandsfr/theslash-theme/main/theslash_banner.png)
 
 
 # TheSlash theme
