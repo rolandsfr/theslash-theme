@@ -41,6 +41,9 @@ Nevertheless, I may or may not end up doing something with this, since this is a
 </br>
 </br>
 
+## Credits
+
+Special thanks to Aksels Grīnbergs who kindly offered help with styling the documentation for the template itself.
   
 ## License
   
