@@ -40,12 +40,6 @@ The original theme bundle (the one intended for sale) has been lost, thus making
 Nevertheless, I may or may not end up doing something with this, since this is a lot of effort put into one single project.
 </br>
 </br>
-
-## Credits
-
-Special thanks to Aksels Grīnbergs who kindly offered help with styling the documentation for the template itself.
-</br>
-</br>
   
 ## License
   
